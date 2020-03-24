@@ -1,0 +1,16 @@
+ClusterDetails
+ClusterStorageSummary
+NodeDetails
+ShelfDetails
+DriveDetails
+AggregateConfiguration
+AggregateSpaceDetails
+SvmConfiguration
+AggregateStorageEfficency
+FlexVolSpaceDetails
+FlexVolConfiguration
+NetworkPortInterfaceGroups
+ExportPolicyRules
+CifsServers
+PortConfiguration
+HardwareLifecycleInformation

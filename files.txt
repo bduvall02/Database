@@ -12,5 +12,5 @@ FlexVolConfiguration
 NetworkPortInterfaceGroups
 ExportPolicyRules
 CifsServers
-PortConfiguration
+NetworkPortSettings
 HardwareLifecycleInformation

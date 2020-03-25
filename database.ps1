@@ -5,6 +5,13 @@ $xml_file = $XML_location + "\All_systems_formatted.xml"
 
 [xml]$inputfile = Get-Content $xml_file
 
+#Create Directory for CSVs
+if (!(Test-Path "$($PSScriptRoot)\CSV"))
+{
+    Write-Host "Creating Directory Structure for CSV"
+    $NULL = New-Item -Path "$($PSScriptRoot)\CSV" -ItemType Directory
+}
+
 function Get-Selection {
     Param ($file)
 

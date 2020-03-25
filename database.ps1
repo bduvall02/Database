@@ -1,5 +1,5 @@
 $working_directory = "C:\work"
-$latest_folder = Get-ChildItem -Directory -path $working_directory | Sort-Object $_.lastwritetime | select -First 1
+$latest_folder = Get-ChildItem -Directory -path $working_directory | Sort-Object $_.lastwritetime | Select-Object -First 1
 $XML_location = $working_directory + "\" + $latest_folder.Name + "\XML Data"
 $xml_file = $XML_location + "\All_systems_formatted.xml"
 

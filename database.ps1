@@ -12,7 +12,7 @@ if (!(Test-Path "$($PSScriptRoot)\CSV"))
     $NULL = New-Item -Path "$($PSScriptRoot)\CSV" -ItemType Directory
 }
 
-function Get-Selection {
+function Get-DataFields {
     Param ($file)
 
     $selection =@()
@@ -353,7 +353,7 @@ function Get-Selection {
 
 $worksheet = @()
 foreach ($worksheet in $(Get-Content .\files.txt).tolower()){
-    $selection_result = Get-Selection $worksheet
+    $selection_result = Get-DataFields $worksheet
     if ($selection_result -eq "error"){
         write-host "Error"
     }else{
